@@ -9,6 +9,6 @@
 </div>
 <div class="form-group">	
 	{!! Form::label('content','Postagem', array('class'=>'control-label')) !!}
-	{!! Form::textarea('content', null, ['class'=>'form-control ckeditor','id'=>'editor1','rows'=>'10', 'cols'=>'80']) !!}
+	{!! Form::textarea('content', null, ['class'=>'form-control ckeditor','rows'=>'10', 'cols'=>'80']) !!}
 </div>
 

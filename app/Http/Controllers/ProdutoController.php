@@ -7,6 +7,7 @@ use Validator;
 use App\Produto;
 use App\Categoria;
 use App\Imagem;
+use App\Helpers\Media;
 use Session;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -178,5 +179,13 @@ class ProdutoController extends Controller
        } 
           
         return view('produto.index',compact('produtos'));
+    }
+   
+     public function Calcula()
+    {
+
+       $media = new Media();
+        $media->nome(); 
+       
     }
 }

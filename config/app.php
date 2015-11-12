@@ -148,6 +148,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         // Minhas classes
         Intervention\Image\ImageServiceProvider::class,
+        Cornford\Googlmapper\MapperServiceProvider::class,
+        GoogleMaps\ServiceProvider\GoogleMapsServiceProvider::class,
 
     ],
 
@@ -200,6 +202,8 @@ return [
         'Form'      => Collective\Html\FormFacade::class,
         'Html'      => Collective\Html\HtmlFacade::class,
         'Image'     => Intervention\Image\Facades\Image::class,
+        'Mapper'    => Cornford\Googlmapper\Facades\MapperFacade::class,
+        'GoogleMaps'=> GoogleMaps\Facade\GoogleMapsFacade::class,
 
     ],
 

@@ -11,7 +11,9 @@
         "bestmomo/scafold": "dev-master",
         "overtrue/laravel-lang": "dev-master",
         "kartik-v/bootstrap-fileinput": "@dev",
-        "intervention/image": "^2.3"
+        "intervention/image": "^2.3",
+        "cornford/googlmapper": "2.*",
+        "alexpechkarev/google-maps": "1.0.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

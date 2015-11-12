@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtqWsq5Ai3GYv6dSa6311tZiYKlbYT4mw&libraries=places"></script>
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 	<link href="{{ asset('/css/main.css') }}" rel="stylesheet">	
 	<link href="{{ asset('/css/styles.css') }}" rel="stylesheet">		
@@ -41,6 +41,7 @@
 					<li><a href="{{ url('/produto') }}">Produtos</a></li>
 					<li><a href="{{ url('/categoria') }}">Categorias</a></li>
 					<li><a href="{{ url('/post') }}">Postagens</a></li>
+					<li><a href="{{ url('/maps') }}">Mapas</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -69,10 +70,11 @@
 </footer>
 
 	<!-- Scripts -->
+	
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="{{ asset('/vendors/ckeditor/ckeditor.js') }}"></script>
-	
+	@yield('script')
 	
 	<script src="{{ asset('/js/java.js') }}"></script>
 	
